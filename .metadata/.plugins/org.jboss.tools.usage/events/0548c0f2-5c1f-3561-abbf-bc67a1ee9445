@@ -1,9 +1,9 @@
-#Thu Jan 12 16:40:32 BRT 2023
+#Thu Jan 12 16:55:04 BRT 2023
 ct=jbt
 a=finishWizard
 c=0
-s=0
-d=1673552432484
+s=1
+d=1673553304007
 v=2.2.400
 vl=How many times the 'Finish' button pressed during the day
 cmp=usage

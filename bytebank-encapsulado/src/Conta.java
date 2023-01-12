@@ -3,6 +3,24 @@ public class Conta {
 	private int agencia;
 	private int numero;
 	private Cliente titular;
+	//atributo compartilhado
+	//atributo da classe
+	
+	//O static faz com que o atributo seja da classe, 
+	//e não mais do objeto.
+	//Com isso, todo o objeto conta possui acesso a um único total.
+	private static int total;
+	
+	public Conta() {}
+	
+	public Conta(int agencia, int numero) {
+		Conta.total++;
+		//ou total++;
+		System.out.println("o total de contas é: " + Conta.total);
+		this.agencia = agencia;
+		this.numero = numero;
+		System.out.println("estou criando uma conta " + this.numero);
+	}
 	
 	public void deposita(double valor) {
 		this.saldo += valor;
@@ -35,6 +53,10 @@ public class Conta {
 	}
 	
 	public void setNumero(int novoNumero) {
+		if(numero <= 0) {
+			 System.out.println("nao pode valor menor ou igual a 0");
+			 return;
+		}
 		this.numero = novoNumero;
 	}
 
@@ -43,6 +65,11 @@ public class Conta {
 	}
 
 	public void setAgencia(int agencia) {
+		
+		if(agencia <= 0) {
+			System.out.println("nao pode valor menor ou igual a 0");
+			return;
+		}
 		this.agencia = agencia;
 	}
 
@@ -58,6 +85,8 @@ public class Conta {
 		this.saldo = saldo;
 	}
 	
-	
+	public static int getTotal() {
+		return Conta.total;
+	}
 
 }
