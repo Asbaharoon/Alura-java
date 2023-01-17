@@ -1,4 +1,4 @@
-
+//interface é uma alternativa para polimorfismo
 //Contrato autenticavel
 	//quem assina esse contrato, precisa implementar os metodos
 public abstract interface Autenticavel{
