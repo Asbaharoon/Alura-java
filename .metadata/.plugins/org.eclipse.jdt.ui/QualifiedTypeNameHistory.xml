@@ -6,4 +6,6 @@
     <fullyQualifiedTypeName name="EditorVideo"/>
     <fullyQualifiedTypeName name="ContaCorrente"/>
     <fullyQualifiedTypeName name="ContaPoupanca"/>
+    <fullyQualifiedTypeName name="SistemaInterno"/>
+    <fullyQualifiedTypeName name="TesteFuncionario"/>
 </qualifiedTypeNameHistroy>
