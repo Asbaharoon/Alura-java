@@ -11,4 +11,5 @@
     <fullyQualifiedTypeName name="AutenticacaoUtil"/>
     <fullyQualifiedTypeName name="SeguroDeVuda"/>
     <fullyQualifiedTypeName name="CalculadoraDeImposto"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
 </qualifiedTypeNameHistroy>
