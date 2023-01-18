@@ -8,4 +8,7 @@
     <fullyQualifiedTypeName name="ContaPoupanca"/>
     <fullyQualifiedTypeName name="SistemaInterno"/>
     <fullyQualifiedTypeName name="TesteFuncionario"/>
+    <fullyQualifiedTypeName name="AutenticacaoUtil"/>
+    <fullyQualifiedTypeName name="SeguroDeVuda"/>
+    <fullyQualifiedTypeName name="CalculadoraDeImposto"/>
 </qualifiedTypeNameHistroy>
