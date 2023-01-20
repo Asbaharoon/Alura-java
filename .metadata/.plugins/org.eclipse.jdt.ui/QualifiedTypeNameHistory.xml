@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="FuncionarioTeste"/>
     <fullyQualifiedTypeName name="ControleBonificacao"/>
     <fullyQualifiedTypeName name="EditorVideo"/>
-    <fullyQualifiedTypeName name="ContaCorrente"/>
     <fullyQualifiedTypeName name="ContaPoupanca"/>
     <fullyQualifiedTypeName name="SistemaInterno"/>
     <fullyQualifiedTypeName name="TesteFuncionario"/>
@@ -12,4 +11,12 @@
     <fullyQualifiedTypeName name="SeguroDeVuda"/>
     <fullyQualifiedTypeName name="CalculadoraDeImposto"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="MinhaExcecao"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="ContaCorrente"/>
+    <fullyQualifiedTypeName name="SaldoInsuficienteException"/>
+    <fullyQualifiedTypeName name="Conexao"/>
+    <fullyQualifiedTypeName name="java.lang.AutoCloseable"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
 </qualifiedTypeNameHistroy>
