@@ -11,6 +11,9 @@ public class TesteArrayListEquals {
 	public static void main(String[] args) {
 		// generics
 		//List -> interface
+		//possivel alternativa onde se trabalha
+		//com duas pilhas q usam a mesma lista é o 
+		//java.util.Vector -> usa o threadSafe
 		List<Conta> lista = new LinkedList<Conta>();
 
 		Conta cc = new ContaCorrente(22, 11);
