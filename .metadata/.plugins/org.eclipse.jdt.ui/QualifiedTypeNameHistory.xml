@@ -21,6 +21,6 @@
     <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
     <fullyQualifiedTypeName name="br.com.bytebank.banco.especial.ContaEspecial"/>
     <fullyQualifiedTypeName name="br.com.bytebank.modelo.Conta"/>
-    <fullyQualifiedTypeName name="br.com.bytebank.modelo.ContaCorrente"/>
     <fullyQualifiedTypeName name="br.com.bytebank.modelo.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.modelo.ContaCorrente"/>
 </qualifiedTypeNameHistroy>
