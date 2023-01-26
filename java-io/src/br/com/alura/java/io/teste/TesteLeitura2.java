@@ -24,9 +24,10 @@ public class TesteLeitura2 {
 			String valor4 = linhaScanner.next();
 			double valor5 = linhaScanner.nextDouble();
 			
+			//%s para string
+			String valorFormatado = String.format("%s - %d - %d - %s - %f", valor1, valor2, valor3, valor4, valor5);
 			
-			System.out.println(valor1 + valor2 + valor3 + valor4 + valor5);
-			
+			System.out.println(valorFormatado);
 //			String[] valores = linha.split(",");
 //			System.out.println(Arrays.toString(valores));
 		
