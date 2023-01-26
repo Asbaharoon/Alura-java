@@ -22,5 +22,12 @@
     <fullyQualifiedTypeName name="br.com.bytebank.banco.especial.ContaEspecial"/>
     <fullyQualifiedTypeName name="br.com.bytebank.modelo.Conta"/>
     <fullyQualifiedTypeName name="br.com.bytebank.modelo.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.modelo.GuardadorDeContas"/>
     <fullyQualifiedTypeName name="br.com.bytebank.modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="java.lang.Boolean"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ArrayBlockingQueue"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.teste.util.TitularDaContaComparator"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.teste.util.NumeroDaContaComparator"/>
 </qualifiedTypeNameHistroy>
