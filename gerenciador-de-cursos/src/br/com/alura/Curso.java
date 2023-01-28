@@ -2,7 +2,9 @@ package br.com.alura;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Curso {
 
@@ -16,7 +18,8 @@ public class Curso {
 	 * -> Polimorfismo
 	 */
 	private List<Aula> aulas = new ArrayList<Aula>();
-
+	private Set<Aluno> alunos = new HashSet<>();
+	
 	public Curso(String nome, String instrutor) {
 		super();
 		this.nome = nome;
@@ -32,7 +35,7 @@ public class Curso {
 	public String getInstrutor() {
 		return instrutor;
 	}
-
+	
 	
 	//um metodo do collections que devolve uma lista
 	//que nao pode ser modificada
@@ -53,4 +56,18 @@ public class Curso {
         return "[Curso: " + this.getNome() + ", tempo total: " + this.getTempoTotal()
                 + ", aulas: + " + this.aulas + "]";
     }
+	
+	public void matricula(Aluno aluno) {
+		this.alunos.add(aluno);
+		
+	}
+	
+	/*
+	 * um conjunto novo de alunos que nao podem ser modificados
+	 * 
+	 */
+	public Set<Aluno> getAlunos() {
+		return Collections.unmodifiableSet(alunos);
+	}
+	
 }
