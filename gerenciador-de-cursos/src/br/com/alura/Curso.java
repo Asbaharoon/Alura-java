@@ -18,6 +18,12 @@ public class Curso {
 	 * -> Polimorfismo
 	 */
 	private List<Aula> aulas = new ArrayList<Aula>();
+	
+	/*
+	 * Tabela de espalhamento, gera um numero aleatorio
+	 * e quando procura, ele vai procurar o objeto
+	 * que possui o hash igual
+	 */
 	private Set<Aluno> alunos = new HashSet<>();
 	
 	public Curso(String nome, String instrutor) {
@@ -68,6 +74,12 @@ public class Curso {
 	 */
 	public Set<Aluno> getAlunos() {
 		return Collections.unmodifiableSet(alunos);
+	}
+
+
+
+	public boolean estaMatriculado(Aluno aluno) {
+		return this.alunos.contains(aluno);
 	}
 	
 }
