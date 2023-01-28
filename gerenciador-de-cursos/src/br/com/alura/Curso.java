@@ -26,6 +26,11 @@ public class Curso {
 	 */
 	private Set<Aluno> alunos = new HashSet<>();
 	
+	/*
+	 * procurar sobre treeSet
+	 * procurar sobre LinkedSet
+	 */
+	
 	public Curso(String nome, String instrutor) {
 		super();
 		this.nome = nome;
