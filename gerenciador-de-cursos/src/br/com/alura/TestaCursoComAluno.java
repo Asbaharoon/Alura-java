@@ -2,6 +2,7 @@ package br.com.alura;
 
 import java.util.Iterator;
 import java.util.Set;
+import java.util.Vector;
 
 public class TestaCursoComAluno {
 
@@ -29,6 +30,13 @@ public class TestaCursoComAluno {
 		Set<Aluno> alunos = javaColecoes.getAlunos();
 		
 		/*
+		 * Treeset pode ordenar elementos na hora da insercao
+		 * e pode ser definido atraves de um comparator
+		 * 
+		 */
+		
+		
+		/*
 		 * todas as colecoes tem o metodo iterator
 		 * o antigo metodo de percorrer um conjunto
 		 * era utilizando o iterator que devolve um objeto do 
@@ -44,6 +52,11 @@ public class TestaCursoComAluno {
 			Aluno proximo = iterador.next();
 			System.out.println(proximo);
 		}
+		
+		//Para sistemas legados
+		//ThreadSafe
+		Vector<Aluno> vetor = new Vector<>();
+		
 		
 		
 		//novo metodo

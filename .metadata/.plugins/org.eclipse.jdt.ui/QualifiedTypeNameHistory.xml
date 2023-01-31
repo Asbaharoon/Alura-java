@@ -11,7 +11,6 @@
     <fullyQualifiedTypeName name="SeguroDeVuda"/>
     <fullyQualifiedTypeName name="CalculadoraDeImposto"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
-    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="MinhaExcecao"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="ContaCorrente"/>
@@ -52,9 +51,11 @@
     <fullyQualifiedTypeName name="br.com.bytebank.modelo.ContaCorrente"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
-    <fullyQualifiedTypeName name="br.com.alura.Curso"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="br.com.alura.Curso"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
 </qualifiedTypeNameHistroy>

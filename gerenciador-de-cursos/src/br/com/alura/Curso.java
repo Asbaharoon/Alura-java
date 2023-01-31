@@ -2,8 +2,11 @@ package br.com.alura;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.NoSuchElementException;
 import java.util.Set;
 
 public class Curso {
@@ -27,8 +30,18 @@ public class Curso {
 	private Set<Aluno> alunos = new HashSet<>();
 	
 	/*
-	 * procurar sobre treeSet
+	 * procurar sobre treeSet -> so funciona para classes comparable
 	 * procurar sobre LinkedSet
+	 */
+	
+	private Map<Integer, Aluno> matriculaParaAluno = new HashMap<Integer, Aluno>();
+	
+	/*
+	 * LinkedHashMap -> guarda ordem das linhas inseridas
+	 * hashtable -> mais antigo
+	 * 
+	 * no map se colocamos o mesmo valor duas vezes para uma chave
+	 * o antigo valor sera sobrescrito pelo novo
 	 */
 	
 	public Curso(String nome, String instrutor) {
@@ -70,6 +83,7 @@ public class Curso {
 	
 	public void matricula(Aluno aluno) {
 		this.alunos.add(aluno);
+		this.matriculaParaAluno.put(aluno.getNumeroMatricula(), aluno);
 		
 	}
 	
@@ -85,6 +99,14 @@ public class Curso {
 
 	public boolean estaMatriculado(Aluno aluno) {
 		return this.alunos.contains(aluno);
+	}
+
+
+	//melhora performance para busca
+	public Aluno buscaMatriculado(int numero) {
+		if(!matriculaParaAluno.containsKey(numero))
+			throw new NoSuchElementException();
+		return matriculaParaAluno.get(numero);
 	}
 	
 }

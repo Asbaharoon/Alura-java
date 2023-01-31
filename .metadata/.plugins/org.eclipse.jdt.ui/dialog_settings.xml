@@ -37,13 +37,16 @@
 		<item key="LimitValue" value="10"/>
 		<item key="SkipNull" value="false"/>
 		<item key="ToStringTemplateSelected" value="0"/>
+		<item key="InstanceOf" value="false"/>
+		<item key="Blocks" value="false"/>
+		<item key="Objects.equals &amp; Objects.hash" value="true"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item key="SortOrdering" value="false"/>
 		<item key="RemoveFinal" value="false"/>
 	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
-		<item key="DIALOG_X_ORIGIN" value="149"/>
+		<item key="DIALOG_X_ORIGIN" value="4"/>
 		<item key="DIALOG_Y_ORIGIN" value="0"/>
 		<item key="DIALOG_WIDTH" value="678"/>
 		<item key="DIALOG_HEIGHT" value="889"/>
@@ -114,6 +117,13 @@
 		<item key="DIALOG_Y_ORIGIN" value="0"/>
 		<item key="DIALOG_WIDTH" value="678"/>
 		<item key="DIALOG_HEIGHT" value="877"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="DialogBounds_GenerateHashCodeEqualsDialog">
+		<item key="DIALOG_X_ORIGIN" value="123"/>
+		<item key="DIALOG_Y_ORIGIN" value="11"/>
+		<item key="DIALOG_WIDTH" value="678"/>
+		<item key="DIALOG_HEIGHT" value="763"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>
