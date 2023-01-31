@@ -12,39 +12,47 @@ public class OrdenaStrings {
 		palavras.add("alura online");
 		palavras.add("casa do código");
 		palavras.add("caelum");
-		
+
 		Comparator<String> comparador = new ComparadorDeStringPorTamanho();
+
+		// Collections.sort(palavras, comparador);
+		palavras.sort((s1, s2) -> {
+			if (s1.length() < s2.length())
+				return -1;
+			if (s1.length() > s2.length())
+				return 1;
+			return 0;
+		});
+
+		palavras.sort((s1, s2) -> 
+			Integer.compare(s1.length(), s2.length())
+		);
 		
-		//Collections.sort(palavras, comparador);
-		palavras.sort(comparador);
-		
+
 		System.out.println(palavras);
-		
+
 		for (String p : palavras) {
 			System.out.println(p);
 		}
-		
-		Consumer<String> consumidor = null;
-		palavras.forEach(consumidor);
-		
+
+		//interface funcional
+		Consumer<String> impressor = s -> System.out.println(s);
+		palavras.forEach(impressor);
+
+		// lambda
+		palavras.forEach(s -> System.out.println(s));
+
 	}
 }
 
-class ConsumidorDeString implements Consumer<String> {
-    public void accept(String s) {
-        System.out.println(s);
-    }
-}
-
-
 class ComparadorDeStringPorTamanho implements Comparator<String> {
 
-    public int compare(String s1, String s2) {
-    	if(s1.length() < s2.length())
-    		return -1;
-    	if(s1.length() > s2.length())
-    		return 1;
-        return 0;
-    }
+	public int compare(String s1, String s2) {
+		if (s1.length() < s2.length())
+			return -1;
+		if (s1.length() > s2.length())
+			return 1;
+		return 0;
+	}
 
 }
