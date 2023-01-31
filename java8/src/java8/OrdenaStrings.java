@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Function;
 
 public class OrdenaStrings {
 
@@ -28,7 +29,17 @@ public class OrdenaStrings {
 			Integer.compare(s1.length(), s2.length())
 		);
 		
-
+		palavras.sort((Comparator.comparing(s -> s.length())));
+		
+		//Method references
+		palavras.sort(Comparator.comparing(String::length));
+		
+		Function<String, Integer> funcao = String::length;
+		Function<String, Integer> funcao2 = s -> s.length();
+		
+		Comparator<String> comparador2 = Comparator.comparing(funcao);
+		palavras.sort(comparador2);
+		
 		System.out.println(palavras);
 
 		for (String p : palavras) {
@@ -39,6 +50,14 @@ public class OrdenaStrings {
 		Consumer<String> impressor = s -> System.out.println(s);
 		palavras.forEach(impressor);
 
+		/*
+		 * invoca o print ln do system out
+		 * tenta converter para um consumer
+		 * 
+		 * para casos mais curtos
+		 */
+		Consumer<String> impressor2 = System.out::println;
+		
 		// lambda
 		palavras.forEach(s -> System.out.println(s));
 
