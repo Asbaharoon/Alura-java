@@ -33,13 +33,13 @@ public class TestaInsercaoComParametro2 {
 			connection.commit();
 			
 			stm.close();
-			connection.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("ROLLBAKC EXECUTADO");
 			connection.rollback();
 		}
 		
+		connection.close();
 		
 	}
 
