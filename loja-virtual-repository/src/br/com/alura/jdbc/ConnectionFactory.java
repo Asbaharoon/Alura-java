@@ -1,3 +1,4 @@
+package br.com.alura.jdbc;
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -32,6 +33,8 @@ public class ConnectionFactory {
 		
 		comboPooledDataSource.setUser("root");
 		comboPooledDataSource.setPassword("rootcj");
+		
+		comboPooledDataSource.setMaxPoolSize(15);
 		
 		this.dataSource = comboPooledDataSource;
 		
