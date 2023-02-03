@@ -13,7 +13,8 @@ public class TestaInsercaoComParametroTryWR {
 			connection.setAutoCommit(false);
 
 			/*
-			 * podemos usar o try with resources para utilizar o autocloseable
+			 * podemos usar o try with resources para utilizar o medotodo
+			 * close do autocloseable
 			 */
 			try (PreparedStatement stm = connection.prepareStatement(
 					"INSERT INTO PRODUTO (nome, descricao) VALUES (?, ?)", Statement.RETURN_GENERATED_KEYS);) {
